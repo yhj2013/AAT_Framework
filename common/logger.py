@@ -30,10 +30,10 @@ class Logging:
         :param abs_file_name: 设置日志输出到文件的路径, 默认输出到当前项目下的logs目录中
         """
         self.logger = logging.getLogger("Iran_Man")
+        log_fmt = "%(asctime)s - %(name)s - %(filename)s - %(levelname)s : %(message)s"
         self.handler = handler
         self.logger.setLevel(level)
-        self.formatter = logging.Formatter(fmt="%(asctime)s - %(name)s - %(filename)s - %(levelname)s : %(message)s",
-                                           datefmt="%Y-%m-%d %H:%M:%S")
+        self.formatter = logging.Formatter(fmt=log_fmt, datefmt="%Y-%m-%d %H:%M:%S")
         proDir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
         resultPath = os.path.join(proDir, 'AAT_results')
         result_Log_Path = os.path.join(resultPath, 'logs')
@@ -78,4 +78,3 @@ class Logging:
 
 Iran_Man = Logging()
 Iran_Man.getLogger()
-

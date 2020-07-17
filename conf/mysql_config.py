@@ -3,15 +3,12 @@
 """
 @author: yhj
 @file: mysql_config.py
-@time: 2020/7/14 22:35
+@time: 2020/7/17 00:26
 @desc: 配置项目中需要连接的mysql
 """
 
-db_config = {
-    'host': '127.0.0.1',
-    'port': 3306,
-    'username': '********',
-    'password': '********',
-    'database': '********',
-    'charset': 'utf8'
-}
+HOST = "localhost"
+USER = "root"
+PASSWD = ""
+DBNAME = ""
+PORT = 3306
