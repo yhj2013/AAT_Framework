@@ -15,5 +15,3 @@ db_config = {
     'database': '********',
     'charset': 'utf8'
 }
-from common.log import *
-Iran_Man.logger.info("success")

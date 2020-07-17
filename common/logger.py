@@ -6,7 +6,7 @@ import threading
 
 """
 @author: yhj
-@file: log.py
+@file: logger.py
 @time: 2020/7/14 22:35
 @desc: 通过创建单例模式的日志流方法定义日志
 """
@@ -78,4 +78,4 @@ class Logging:
 
 Iran_Man = Logging()
 Iran_Man.getLogger()
-Iran_Man.logger.info("success")
+
