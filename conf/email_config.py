@@ -10,4 +10,3 @@ PASSWORD = "*****"
 SUBJECT = "test_test"
 EMAIL_FROM = "****@163.com"
 EMAIL_TO = "****@163.com"
-
