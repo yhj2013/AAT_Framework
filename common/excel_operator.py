@@ -2,7 +2,7 @@
 import xlrd
 from xlutils.copy import copy
 from conf import excel_config
-import json
+
 
 """
 @author: yhj
