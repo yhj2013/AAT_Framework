@@ -1,5 +1,6 @@
 # encoding: utf-8
 import xlrd
+from xlutils.copy import copy
 from conf import excel_config
 import json
 
@@ -48,7 +49,7 @@ class Excel:
         """
         self.page = self.book.sheet_by_index(index)
         rows = self.page.nrows
-        cols = self.page.cols
+        cols = self.page.ncols
         return rows, cols
 
     def all_jsons(self, index):
@@ -70,3 +71,7 @@ class Excel:
                 value = self.page.cell_value(i, j)
                 dict[title] = value
             yield dict
+
+
+
+
